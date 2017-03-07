@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "915247351508",
+    "firebase_url": "https://spectrum-68d26.firebaseio.com",
+    "project_id": "spectrum-68d26",
+    "storage_bucket": "spectrum-68d26.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:915247351508:android:1d855857bbd1a364",
+        "android_client_info": {
+          "package_name": "com.example.deadroit.spectrum"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "915247351508-0dmjk6j20pq33ohao2048eh32t7rsas6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCfy8Cx9c1LxDyK2CRksEhXkyw0i1Jj3Xc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

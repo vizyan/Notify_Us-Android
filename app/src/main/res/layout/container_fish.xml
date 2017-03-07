@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:clickable="true"
+    android:orientation="vertical"
+    android:foreground="?attr/selectableItemBackground"
+    android:layout_marginTop="5dp"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp"
+    app:cardCornerRadius="5dp">
+
+    <RelativeLayout
+        android:layout_height="fill_parent"
+        android:minHeight="80dp"
+        android:layout_width="fill_parent"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:background="#EE8871">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="fish name"
+            android:id="@+id/textFishName"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="2dp"
+            android:textSize="22sp"
+            android:textColor="@color/textColor"
+            android:textStyle="normal|bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Small Text"
+            android:id="@+id/textSize"
+            android:layout_below="@+id/imageView8"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="5dp"
+            android:textSize="18sp"
+            android:textColor="@color/textColor" />
+
+        <ImageView
+            app:srcCompat="@drawable/waktu"
+            android:id="@+id/imageView9"
+            android:layout_width="15dp"
+            android:layout_below="@+id/textFishName"
+            android:layout_toEndOf="@+id/textType"
+            android:layout_marginLeft="10dp"
+            android:layout_height="15dp" />
+
+        <ImageView
+            app:srcCompat="@drawable/rss_pengumuman"
+            android:id="@+id/imageView8"
+            android:visibility="visible"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_below="@+id/textFishName"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:textSize="16sp"
+            android:text="price"
+            android:id="@+id/textPrice"
+            android:textColor="#FFFFFF"
+            android:layout_marginLeft="3dp"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/textSize"
+            android:layout_toEndOf="@+id/imageView9" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="sd"
+            android:id="@+id/textType"
+            android:layout_marginLeft="3dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imageView8"
+            android:layout_toEndOf="@+id/imageView8"
+            android:textSize="16sp"
+            android:textColor="@color/textColor" />
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

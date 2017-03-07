@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_menu"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.deadroit.spectrum.Menu">
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        app:srcCompat="@drawable/main"
+        android:id="@+id/imageView"
+        android:cropToPadding="false"
+        android:adjustViewBounds="false"
+        android:scrollbarSize="0dp"
+        android:background="@drawable/main"
+        android:layout_alignParentStart="true" />
+
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="match_parent"
+        android:entries="@array/android_layout_array"
+        android:background="@drawable/button2"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:layout_height="45dp"
+        android:paddingRight="20dp"
+        android:paddingLeft="20dp"
+        android:layout_marginTop="63dp"
+        android:layout_alignTop="@+id/editText1"
+        android:layout_centerHorizontal="true"
+        android:dropDownWidth="match_parent"
+        android:textSize="30sp"
+        android:fontFamily="cursive"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_below="@+id/spinner1"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="93dp">
+
+        <Button
+            android:text="Keluar"
+            android:layout_width="100dp"
+            android:layout_height="45dp"
+            android:layout_marginBottom="0dp"
+            android:id="@+id/buttOut"
+            style="@style/Widget.AppCompat.Button"
+            android:background="@drawable/butt1"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="15dp"
+            android:layout_weight="1"
+            android:typeface="normal"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:fontFamily="cursive"
+            android:textSize="28sp"
+            android:textColor="#ffffff" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="10dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="45dp"
+            android:id="@+id/buttIn"
+            style="@style/Widget.AppCompat.Button"
+            android:background="@drawable/butt1"
+            android:layout_marginEnd="15dp"
+            android:layout_alignBaseline="@+id/buttOut"
+            android:layout_alignBottom="@+id/buttOut"
+            android:layout_alignParentEnd="true"
+            android:layout_weight="1"
+            android:typeface="normal"
+            android:text="Masuk"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:fontFamily="cursive"
+            android:textSize="28sp"
+            android:textColor="#ffffff" />
+    </LinearLayout>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:inputType="text"
+        android:text="Nama"
+        android:gravity="center"
+        android:ems="10"
+        android:id="@+id/editText1"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        android:fontFamily="cursive"
+        style="@style/Widget.AppCompat.EditText"
+        tools:background="@drawable/button2"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:background="@drawable/button2"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>

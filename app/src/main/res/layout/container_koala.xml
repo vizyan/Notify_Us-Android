@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:clickable="true"
+    android:background="#F8F8FB"
+    android:orientation="vertical"
+    android:foreground="?attr/selectableItemBackground"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="5dp"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp"
+    app:cardCornerRadius="5dp"
+    android:id="@+id/cardView2">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:minHeight="67dp"
+        android:background="#F8F8FB"
+        android:id="@+id/relative1"
+        android:clickable="true"
+        android:foreground="?attr/selectableItemBackground"
+        app:cardCornerRadius="5dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mata Kuliah"
+            android:id="@+id/textMatkul"
+            android:textSize="22sp"
+            android:textColor="@color/textColor"
+            android:background="@color/colorPrimaryDark"
+            android:textStyle="normal"
+            android:gravity="center"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="*"
+            android:layout_below="@+id/textMatkul"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="3dp">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+
+                <ImageView
+                    android:layout_width="17dp"
+                    android:layout_height="17dp"
+                    app:srcCompat="@drawable/tab_pengumuman"
+                    android:id="@+id/imageKelas"
+                    android:tint="@color/colorPrimaryDark"/>
+
+                <TextView
+                    android:text="Kelas"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textKelas" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="17dp"
+                    app:srcCompat="@drawable/dosen"
+                    android:id="@+id/imageView10"
+                    android:tint="@color/colorPrimaryDark"/>
+
+                <TextView
+                    android:text="Dosen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textDosen" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="2dp">
+
+                <ImageView
+                    android:layout_width="17dp"
+                    android:layout_height="17dp"
+                    app:srcCompat="@drawable/waktu"
+                    android:id="@+id/imageView12"
+                    android:tint="@color/colorPrimaryDark"/>
+
+                <TextView
+                    android:text="Waktu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textWaktu" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="17dp"
+                    app:srcCompat="@drawable/tempat"
+                    android:id="@+id/imageView13"
+                    android:tint="@color/colorPrimaryDark"/>
+
+                <TextView
+                    android:text="Tempat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textTempat" />
+
+            </TableRow>
+
+        </TableLayout>
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
