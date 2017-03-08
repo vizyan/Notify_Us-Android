@@ -33,6 +33,7 @@ public class Fragment_Two extends Fragment  {
         View rootView = inflater.inflate(R.layout.fragment_two, container, false);
         return rootView;
     }
+
     @Override
     public void onActivityCreated(Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
