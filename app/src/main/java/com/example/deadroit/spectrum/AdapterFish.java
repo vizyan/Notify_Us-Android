@@ -26,14 +26,12 @@ public class AdapterFish extends RecyclerView.Adapter<RecyclerView.ViewHolder> i
     DataFish current;
     int currentPos=0;
 
-    // create constructor to innitilize context and data sent from MainActivity
     public AdapterFish(Context context, List<DataFish> data){
         this.context=context;
         inflater= LayoutInflater.from(context);
         this.data=data;
     }
 
-    // Inflate the layout when viewholder created
     @Override
     public RecyclerView.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View view=inflater.inflate(R.layout.container_fish, parent,false);
@@ -41,11 +39,9 @@ public class AdapterFish extends RecyclerView.Adapter<RecyclerView.ViewHolder> i
         return holder;
     }
 
-    // Bind data
     @Override
     public void onBindViewHolder(RecyclerView.ViewHolder holder, int position) {
 
-        // Get current position of item in recyclerview to bind data and assign values from list
         MyHolder myHolder= (MyHolder) holder;
         DataFish current=data.get(position);
         myHolder.textFishName.setText(current.fishName);
@@ -54,7 +50,6 @@ public class AdapterFish extends RecyclerView.Adapter<RecyclerView.ViewHolder> i
         myHolder.textPrice.setText("" + current.price + " WIB");
 
     }
-    // return total item from List
     @Override
     public int getItemCount() {
         return data.size();
@@ -67,7 +62,6 @@ public class AdapterFish extends RecyclerView.Adapter<RecyclerView.ViewHolder> i
         TextView textType;
         TextView textPrice;
 
-        // create constructor to get widget reference
         public MyHolder(View itemView) {
             super(itemView);
             textFishName= (TextView) itemView.findViewById(R.id.textFishName);
