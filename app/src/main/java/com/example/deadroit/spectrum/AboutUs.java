@@ -25,22 +25,14 @@ public class AboutUs extends AppCompatActivity {
         toolbar = (Toolbar) findViewById(R.id.toolbar);
         setupToolbar();
         setSupportActionBar(toolbar);
-        // Menginisiasi  NavigationView
         navigationView = (NavigationView) findViewById(R.id.navigation_view);
-        //Mengatur Navigasi View Item yang akan dipanggil untuk menangani item klik menu navigasi
         navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
-            // This method will trigger on item Click of navigation menu
             @Override
             public boolean onNavigationItemSelected(MenuItem menuItem) {
-                //Memeriksa apakah item tersebut dalam keadaan dicek  atau tidak,
                 if (menuItem.isChecked()) menuItem.setChecked(false);
                 else menuItem.setChecked(true);
-                //Menutup  drawer item klik
                 drawerLayout.closeDrawers();
-                //Memeriksa untuk melihat item yang akan dilklik dan melalukan aksi
                 switch (menuItem.getItemId()) {
-                    // pilihan menu item navigasi akan menampilkan pesan toast klik kalian bisa menggantinya
-                    //dengan intent activity
                     case R.id.navigation1:
                         Intent home = new Intent(AboutUs.this, MainActivity.class);
                         startActivity(home);
@@ -69,24 +61,19 @@ public class AboutUs extends AppCompatActivity {
                 }
             }
         });
-        // Menginisasi Drawer Layout dan ActionBarToggle
         drawerLayout = (DrawerLayout) findViewById(R.id.drawer);
         ActionBarDrawerToggle actionBarDrawerToggle = new ActionBarDrawerToggle(this, drawerLayout, toolbar, R.string.openDrawer, R.string.closeDrawer) {
             @Override
             public void onDrawerClosed(View drawerView) {
-                // Kode di sini akan merespons setelah drawer menutup disini kita biarkan kosong
                 super.onDrawerClosed(drawerView);
             }
 
             @Override
             public void onDrawerOpened(View drawerView) {
-                //  Kode di sini akan merespons setelah drawer terbuka disini kita biarkan kosong
                 super.onDrawerOpened(drawerView);
             }
         };
-        //Mensetting actionbarToggle untuk drawer layout
         drawerLayout.setDrawerListener(actionBarDrawerToggle);
-        //memanggil synstate
         actionBarDrawerToggle.syncState();
 
     }
